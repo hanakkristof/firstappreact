@@ -35,11 +35,13 @@ function App() {
         >
           Todo  
         </Button>
+        
       </div>
-      
+      <div className='d-flex gap-3 justify-content-center'>
       {selected == "counter" && <Counter/>}
       {selected == "toggle" && <Toggle/>}
       {selected == "todo" && <Todo/>}
+      </div>
       </div>
     </>
   )

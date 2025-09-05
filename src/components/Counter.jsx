@@ -38,7 +38,7 @@ export const Counter = () => {
                 </Button>
 
             </div>
-            <div>
+            <div className='d-flex justify-content-center'>
                 {/*itt jelenjen meg egy kép, aminek az indexét a nr adja meg, de csak ha pozitív picsum*/}
                 
                 {nr > 0 && <Myimg nr={nr} loading={loading} setLoading={setLoading}/>}
