@@ -7,7 +7,7 @@ export const Myimg = ({nr,loading, setLoading}) => {
    // const [loading, setLoading]=useState(true)
     const url = `https://picsum.photos/id/${nr}/400`
     if (nr==50) {
-        return <div> {loading &&
+        return <div className='d-flex justify-content-center'> {loading &&
             <Spinner>
                 Loading...
             </Spinner>
@@ -16,7 +16,7 @@ export const Myimg = ({nr,loading, setLoading}) => {
     }
     else{
        
-    return <div> {loading &&
+    return <div className='d-flex justify-content-center'> {loading &&
         <Spinner>
             Loading...
         </Spinner>

@@ -13,7 +13,7 @@ export const Counter = () => {
 
     return (
         <div>
-            <div>
+            <div className='d-flex justify-content-center'>
                 <Button
                     color="primary"
                     onClick={() => {setNr(nr - 1), setLoading(true)}}
