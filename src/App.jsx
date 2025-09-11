@@ -6,6 +6,9 @@ import { useState } from 'react';
 import { Toggle } from './components/Toggle';
 import { Todo } from './components/Todo';
 import { Gallery } from "./components/Gallery";
+import { Frameworks } from './components/Frameworks';
+import { RandomQuote } from './components/RandomQuote';
+
 
 function App() {
 
@@ -44,11 +47,13 @@ function App() {
         </Button>
         
       </div>
-      <div className='d-flex gap-3 justify-content-center'>
+      <div className='d-flex gap-3 justify-content-center flex-column align-items-center'>
       {selected == "counter" && <Counter/>}
       {selected == "toggle" && <Toggle/>}
       {selected == "todo" && <Todo/>}
       {selected == "gallery" && <Gallery/>} 
+      {selected == null && <Frameworks/>}
+      {selected == null && <RandomQuote/>}
       </div>
       </div>
     </>

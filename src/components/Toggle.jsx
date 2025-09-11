@@ -3,6 +3,7 @@ import { Button } from 'reactstrap'
 import { FaRegSadCry } from 'react-icons/fa'
 import { FaRegSmile } from 'react-icons/fa'
 import { useState } from 'react'
+import { Dice } from './Dice'
 export const Toggle = () => {
   const [ishappy,setishappy] = useState(true);
 
@@ -16,6 +17,8 @@ export const Toggle = () => {
         <FaRegSadCry style={{color:"Grey",fontSize:"3rem"}}/>
   }
       </div>
+
+      <Dice/>
     </div>
   )
 }
